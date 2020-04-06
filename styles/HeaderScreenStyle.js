@@ -3,8 +3,8 @@ import { Metrics, ApplicationStyles } from '../Themes/'
 
 export default StyleSheet.create({
     headerContainer: {
-        height: Platform.OS === 'ios' ? '10%' : '8%',
-        flex: 0,
+        height: Platform.OS === 'ios' ? '10%' : '7%',
+        flex: 1,
         zIndex: 5
     },
     headerStyle: {

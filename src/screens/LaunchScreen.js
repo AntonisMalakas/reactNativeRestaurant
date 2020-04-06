@@ -26,6 +26,7 @@ export default class LaunchScreen extends Component {
                     <PromoFoodItem
                         navigation={navigate}
                         image={burgerImage}
+                        foodTitle={'BBQ'}
                         text={'BURGER'} />
 
                     <PromoFoodItem

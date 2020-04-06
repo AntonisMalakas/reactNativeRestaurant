@@ -4,7 +4,7 @@ import { Container, Header, Left, Body, Right, Icon, Button } from 'native-base'
 
 
 // Styles
-import styles from '../../styles/HeaderFoodScreenStyle'
+import styles from '../../styles/HeaderScreenStyle'
 
 export default class HeaderFood extends Component {
     render() {
@@ -13,20 +13,17 @@ export default class HeaderFood extends Component {
 
                 <Header style={styles.headerStyle}>
                     <Left>
-                        <Button transparent onPress={() => alert("back btn pressed")}>
+                        <Button transparent onPress={() => this.props.navigation.goBack()}>
                             <Icon style={styles.iconStyle} name="ios-arrow-back" />
                         </Button>
-
                     </Left>
-                    <Body>
-                        <Text>
-                            asdsf
-                    </Text>
+                    <Body style={styles.bodyStyle}>
+                        <Text style={styles.titleText} >Foodstagram</Text>
                     </Body>
                     <Right>
-                        <Text>
-                            zndasjdh
-                    </Text>
+                        <Button transparent onPress={() => alert("Right btn pressed")}>
+                            <Icon style={styles.iconStyle} type="FontAwesome5" name="shopping-cart" />
+                        </Button>
                     </Right>
 
                 </Header>

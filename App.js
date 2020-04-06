@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import MainNavigator from './src/navigation/MainNavigator';
 import PrimaryNav from './src/navigation/AppNavigator';
@@ -26,26 +26,13 @@ export default class App extends Component {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <PrimaryNav />
-
         </PersistGate>
-      </Provider>
-      // <Container>
-      //   <Header>
-      //     <Left>
-      //       <Text>L</Text>
-      //     </Left>
-      //     <Body>
-      //       <Text>B</Text>
-      //     </Body>
-      //     <Right>
-      //       <Text>R</Text>
-      //     </Right>
-      //   </Header>
-      // </Container>
+      </Provider >
     );
 
   }
 }
+
 
 
 
