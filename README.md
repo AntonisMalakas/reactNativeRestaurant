@@ -1,5 +1,8 @@
 ﻿# reactNativeRestaurant
 
+This project is made for learning purposes.
+this project is using React Navigation 4
+
 To run this project:
 
       git clone this repo
